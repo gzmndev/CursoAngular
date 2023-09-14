@@ -4,26 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encabezados</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Titutlos</h1> 
-    <h2>Subtitulos</h2> 
-    <h3>Titulo de Caracteristicas</h3>
-    <h4>Citar ejemplo</h4>
-    <h5>Ni se usa</h5>
-    <h6>Tampoco se usa</h6> 
-
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" id="navId">
+        <li class="nav-item">
+            <a href="#tab1Id" class="nav-link active">Active</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#tab2Id">Action</a>
+                <a class="dropdown-item" href="#tab3Id">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#tab4Id">Action</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a href="#tab5Id" class="nav-link">Another link</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Disabled</a>
+        </li>
+    </ul>
+    
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+    </div>
+    
+    <script>
+        $('#navId a').click(e => {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+    </script>
+         
+     
+    <div class="container mt-xl-4 mt-lg-3 mt-md-2 mt-sm-1">
+    <h1 class="text-primary">Ejemplos Títulos</h1> 
+    <hr class="bg-danger border-2 border-top border-danger" />
+    <h1>Títulos H1</h1> 
+    <h2>Subtitulos H2</h2> 
+    <h3>Titulo de Caracteristicas H3</h3>
+    <h4>Citar ejemplo H4</h4>
+    <h5>Ni se usa H5</h5>
+    <h6>Tampoco se usa H6</h6> 
+    
+    <h1 class="text-primary">Párrafo</h1> 
+    <hr class="bg-danger border-2 border-top border-danger" />
+    
     <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repudiandae deleniti est. Pariatur non, ullam animi illum nisi minima, cumque quibusdam architecto quo nesciunt blanditiis assumenda dolorem iste corrupti incidunt.
     </p>
 
+    
+
+    <h1 class="text-primary">Tabla</h1> 
+    <hr class="bg-danger border-2 border-top border-danger" />
     <p>
         tr = Fila
         td = Columna
     </p>
-
     <!-- control +k control+c   comentar-->
-    <table border="1">
+    <table class="table table-striped table-inverse table-responsive">
+        <thead class="thead-inverse">
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Ico</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td scope="row">1</td>
+                <td>Angular</td>
+                <td>Framework</td>
+                <td><img src="imgs/3069652_angular_angular js_circle_js_programming_icon.ico" height="25px" width="25px" alt="Angular ico"></td>
+                </tr>    
+                <tr>
+                <td scope="row">2</td>
+                <td>React</td>
+                <td>Framework</td>
+                <td><img src="imgs/7423887_react_react native_icon.ico" height="25px" width="25px" alt="Angular ico"></td>
+                </tr>              
+            </tbody>
+    </table>
+    <!-- <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Ico</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">1</td>
+                <td>Angular</td>
+                <td>Framework</td>
+                <td><img src="imgs/3069652_angular_angular js_circle_js_programming_icon.ico" height="25px" width="25px" alt="Angular ico"></td>
+            </tr>           
+        </tbody>
+    </table> -->
+    <!-- <table border="1" class="">
         <tr>
             <td>Id</td>
             <td>Nombre</td>
@@ -35,8 +126,9 @@
             <td>Angular</td>
             <td>Framework</td>
         </tr>
-    </table>
-
+    </table> -->
+    <h1 class="text-primary">Listas</h1> 
+    <hr class="bg-danger border-2 border-top border-danger" />
 <h2>Lista sin enumerar</h2>
     <ul>
         <li>1</li>
@@ -60,10 +152,12 @@
     <Img src="imgs/download (1).jpg" alt=""></Img>
     <Img width="50px" height="50px" src="imgs/download (1).jpg" alt=""></Img>
     <Img src="imgs/download.jpg" alt=""></Img>
+    
+    <h1 class="text-primary">Iframe</h1> 
+    <hr class="bg-danger border-2 border-top border-danger" />
 
-<h2>Iframe</h2>
 <iframe src="https://players.brightcove.net/1752604059001/VJCJXL3Ye_default/index.html?videoId=4093643993001" allowfullscreen="" allow="encrypted-media" style="width: 640px; height: 360px;">
 </iframe>
-
+</div>
 </body>
 </html>
