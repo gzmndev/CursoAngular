@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+    <!-- Nav tabs -->
+    <div id="loadmenus">
+
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid">
+        <div class="table-responsive">
+            <table class="table table-primary">
+                <thead>
+                    <!-- {"code":200,"message":"Profesor Lista","data":[{"id":"1235026","cedula":"1111111111",
+                    "correoelectronico":"asdfasdf@gmail.com",
+                    "telefono":"1212","telefonocelular":"616161",
+                    "fechanacimiento":"2023-09-18","sexo":"Masculino",
+                    "direccion":"Mi casa","nombre":"Arkin",
+                    "apellidopaterno":"1primer","apellidomaterno":
+                    "2segundo","idCarreras":"7","usuario":"Arkin","nacionalidad":"Costa Rica"} -->
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Cedula</th>
+                        <th scope="col">Correo Electronico</th>
+                        <th scope="col">Telefono</th>
+                        <th scope="col">Celular</th>
+                        <th scope="col">Fecha Nacimiento</th>
+                        <th scope="col">Sexo</th>
+                        <th scope="col">Direccion</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido1</th>
+                        <th scope="col">Apellido2</th>
+                        <th scope="col">Id Carreras</th>
+                        <th scope="col">Usuario</th>
+                        <th scope="col">Nacionalidad</th>
+                    </tr>
+                </thead>
+                <tbody id="profesores">
+
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+  <script src="js/menu.js"></script>
+  <script src="js/listarprofesores.js"></script>
+
+    <!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->
+    <script>
+        var triggerEl = document.querySelector('#navId a')
+       // bootstrap.Tab.getInstance(triggerEl).show() // Select tab by name
+    </script>
+</body>
+
+</html>
