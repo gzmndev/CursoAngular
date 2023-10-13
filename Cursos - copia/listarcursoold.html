@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Listar Grupo</title>
+  <title>Listar Curso</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,76 +22,55 @@
     </div>
   </header>
   <main>
-    <div class="container">
+    <div class="container-fluid">
         <div class="table-responsive">
-            <table class="table table-striped">
+            <table class="table table-primary">
                 <thead>
                     <tr>
                         <th scope="col">Id</th>
                         <th scope="col">Nombre</th>
+                        <th scope="col">Descripcion</th>
+                        <th scope="col">Tiempo</th>
+                        <th scope="col">Usuario</th>
                         <th scope="col">Acciones</th>
                     </tr>
                 </thead>
-                <tbody id="grupos">
-
+                <tbody id="calificaciones">
+                    
                 </tbody>
             </table>
         </div>
         
     </div>
   </main>
+
+  <!-- Modal trigger button
+  <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+    Launch
+  </button> -->
+  
   <!-- Modal Body -->
   <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
   <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
       <div class="modal-content">
-        <div class="modal-header bg-danger">
+        <div class="modal-header">
           <h5 class="modal-title" id="modalTitleId">Modal title</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          <input type="hidden" name="idEliminar" id="idEliminar">
-          Desea eliminar el registro: <span id="idResultado"></span>?
+        <div id="modalbody" class="modal-body">
+          
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-success" onclick="eliminarId()">Yes</button>
+          <button type="button" class="btn btn-primary">Save</button>
         </div>
       </div>
     </div>
   </div>
-
-  <!-- Modal Body -->
-  <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-  <div class="modal fade" id="modalEditar" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
-    role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
-      <div class="modal-content">
-        <div class="modal-header bg-success">
-          <h5 class="modal-title" id="modalTitleId">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form id="registrogrupos">
-            <div class="mb-3">
-              <label for="" class="form-label">Id</label>
-              <input type="text" required class="form-control" name="id" id="id" disabled aria-describedby="helpId"
-                placeholder="Id">
-            </div>
-            <div class="mb-3">
-              <label for="" class="form-label">nombre</label>
-              <input type="text" required class="form-control" name="nombre" id="nombre" aria-describedby="helpId"
-                placeholder="Ingrese su nombre">
-            </div>
-            <div class="mb-3">
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="">Close</button>
-              <button type="button" class="btn btn-success" onclick="editar()">Yes</button>
-            </div>
-        </div>
-      </div>
-    </div>
+  
+  
+ 
 
   <footer>
     <!-- place footer here -->
@@ -106,7 +85,7 @@
   </script>
 
   <script src="js/menu.js"></script>
-  <script src="js/listargrupo.js"></script>
+  <script src="js/listarcurso.js"></script>
 
     <!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->
     <script>

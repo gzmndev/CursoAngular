@@ -22,7 +22,7 @@
     </div>
   </header>
   <main>
-    <div class="container-fluid">
+    <div class="container">
         <div class="table-responsive">
             <table class="table table-striped">
                 <thead>
@@ -72,6 +72,82 @@
       </div>
     </div>
   </div>
+  
+  <!-- Modal Body -->
+  <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+  <div class="modal fade" id="modalEditar" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+    role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-success">
+          <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="registroprofesor">
+            <div class="mb-3">
+              <label for="" class="form-label">Id</label>
+              <input type="text" required class="form-control" name="id" id="id" disabled aria-describedby="helpId" placeholder="Id">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">cedula</label>
+              <input type="text" required class="form-control" name="cedula" id="cedula" aria-describedby="helpId" placeholder="Ingrese su cedula">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">correoelectronico</label>
+              <input type="text" required class="form-control" name="correoelectronico" id="correoelectronico" aria-describedby="helpId" placeholder="Ingrese su correoelectronico">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">telefono</label>
+              <input type="text" required class="form-control" name="telefono" id="telefono" aria-describedby="helpId" placeholder="Ingrese su telefono">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">telefonocelular</label>
+              <input type="text" required class="form-control" name="telefonocelular" id="telefonocelular" aria-describedby="helpId" placeholder="Ingrese su telefonocelular">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">fechanacimiento</label>
+              <input type="text" required class="form-control" name="fechanacimiento" id="fechanacimiento" aria-describedby="helpId" placeholder="Ingrese su fechanacimiento">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">sexo</label>
+              <input type="text" required class="form-control" name="sexo" id="sexo" aria-describedby="helpId" placeholder="Ingrese su sexo">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">direccion</label>
+              <input type="text" required class="form-control" name="direccion" id="direccion" aria-describedby="helpId" placeholder="Ingrese su direccion">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">nombre</label>
+              <input type="text" required class="form-control" name="nombre" id="nombre" aria-describedby="helpId" placeholder="Ingrese su nombre">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">apellidopaterno</label>
+              <input type="text" required class="form-control" name="apellidopaterno" id="apellidopaterno" aria-describedby="helpId" placeholder="Ingrese su apellidopaterno">
+            </div> 
+            <div class="mb-3">
+              <label for="" class="form-label">apellidomaterno</label>
+              <input type="text" required class="form-control" name="apellidomaterno" id="apellidomaterno" aria-describedby="helpId" placeholder="Ingrese su apellidomaterno">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">idCarreras</label>
+              <input type="text" required class="form-control" name="idCarreras" id="idCarreras" aria-describedby="helpId" placeholder="Ingrese su idCarreras">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">nacionalidad</label>
+              <input type="text" required class="form-control" name="nacionalidad" id="nacionalidad" aria-describedby="helpId" placeholder="Ingrese su nacionalidad">
+            </div>
+            
+            <div class="mb-3">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="">Close</button>
+              <button type="button" class="btn btn-success" onclick="editar()">Yes</button>
+            </div>
+        </div>
+      </div>
+    </div>
+
   <footer>
     <!-- place footer here -->
   </footer>

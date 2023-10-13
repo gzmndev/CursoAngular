@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Listar Grupo</title>
+  <title>Listar Profesor</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -27,12 +27,24 @@
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th scope="col">Id</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Acciones</th>
+                      <th scope="col">id</th>
+                      <th scope="col">cedula</th>
+                      <th scope="col">correoelectronico</th>
+                      <th scope="col">telefono</th>
+                      <th scope="col">telefonocelular</th>
+                      <th scope="col">fechanacimiento</th>
+                      <th scope="col">sexo</th>
+                      <th scope="col">direccion</th>
+                      <th scope="col">nombre</th>
+                      <th scope="col">apellidopaterno</th>
+                      <th scope="col">apellidomaterno</th>
+                      <th scope="col">idCarreras</th>
+                      <th scope="col">usuario</th>
+                      <th scope="col">nacionalidad</th>
+                      <th scope="col">Acciones</th>
                     </tr>
                 </thead>
-                <tbody id="grupos">
+                <tbody id="profesores">
 
                 </tbody>
             </table>
@@ -60,39 +72,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Modal Body -->
-  <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-  <div class="modal fade" id="modalEditar" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
-    role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
-      <div class="modal-content">
-        <div class="modal-header bg-success">
-          <h5 class="modal-title" id="modalTitleId">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form id="registrogrupos">
-            <div class="mb-3">
-              <label for="" class="form-label">Id</label>
-              <input type="text" required class="form-control" name="id" id="id" disabled aria-describedby="helpId"
-                placeholder="Id">
-            </div>
-            <div class="mb-3">
-              <label for="" class="form-label">nombre</label>
-              <input type="text" required class="form-control" name="nombre" id="nombre" aria-describedby="helpId"
-                placeholder="Ingrese su nombre">
-            </div>
-            <div class="mb-3">
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="">Close</button>
-              <button type="button" class="btn btn-success" onclick="editar()">Yes</button>
-            </div>
-        </div>
-      </div>
-    </div>
-
   <footer>
     <!-- place footer here -->
   </footer>
@@ -106,7 +85,7 @@
   </script>
 
   <script src="js/menu.js"></script>
-  <script src="js/listargrupo.js"></script>
+  <script src="js/listarprofesor.js"></script>
 
     <!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->
     <script>

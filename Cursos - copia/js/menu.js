@@ -54,10 +54,7 @@ loadmenus.innerHTML +=
             <a class="dropdown-item" href="listargrupo.html">Listar</a>                                
             <a class="dropdown-item" href="creargrupo.html">Crear</a>
         </div>
-    </li>      
-    <li class="nav-item dropdown">
-    <a class="nav-link " href="login.html">Login</a> 
-    </li>        
+    </li>            
     
 </ul>    
 `;
